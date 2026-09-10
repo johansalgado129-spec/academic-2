@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>.NET + C# Technical Academy</title>
+  <meta name="description" content="Ruta interactiva para aprender .NET, C#, SQL, EF Core y ASP.NET Core desde fundamentos hasta prueba técnica." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">C#</div>
+      <div><strong>.NET Academy</strong><span>Technical Track</span></div>
+    </div>
+    <nav id="nav">
+      <button class="nav-btn active" data-view="dashboard">⌂ <span>Inicio</span></button>
+      <button class="nav-btn" data-view="roadmap">◫ <span>Ruta de aprendizaje</span></button>
+      <button class="nav-btn" data-view="lesson">▤ <span>Lecciones</span></button>
+      <button class="nav-btn" data-view="csharp-lab">⌨ <span>Laboratorio C#</span></button>
+      <button class="nav-btn" data-view="sql-lab">▦ <span>Laboratorio SQL</span></button>
+      <button class="nav-btn" data-view="quiz">? <span>Banco de preguntas</span></button>
+      <button class="nav-btn" data-view="technical-test">⚡ <span>Prueba técnica</span></button>
+      <button class="nav-btn" data-view="cheatsheets">✦ <span>Cheatsheets</span></button>
+      <button class="nav-btn" data-view="videos">▶ <span>Videos en español</span></button>
+      <button class="nav-btn" data-view="capstone">◆ <span>Proyecto final</span></button>
+      <button class="nav-btn" data-view="glossary">A·Z <span>Glosario</span></button>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="mini-progress"><span id="sidebarProgressText">0% completado</span><div><i id="sidebarProgressBar"></i></div></div>
+      <button id="resetProgress" class="ghost small">Reiniciar progreso</button>
+    </div>
+  </aside>
+
+  <main>
+    <header class="topbar">
+      <div>
+        <span class="eyebrow">Preparación para vacante Backend .NET</span>
+        <h1 id="pageTitle">Panel de entrenamiento</h1>
+      </div>
+      <div class="top-actions">
+        <span class="badge">.NET 10 LTS</span>
+        <span class="badge">C# 14</span>
+        <span class="badge">SQL</span>
+      </div>
+    </header>
+    <section id="app" class="content"></section>
+  </main>
+
+  <template id="codeBlockTemplate">
+    <div class="code-block">
+      <div class="code-toolbar"><span></span><button class="copy-btn">Copiar</button></div>
+      <pre><code></code></pre>
+    </div>
+  </template>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

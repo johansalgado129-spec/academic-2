@@ -1,0 +1,39 @@
+@host = http://localhost:5000
+
+### Inicio
+GET {{host}}/
+
+### Listar productos
+GET {{host}}/api/products
+
+### Filtrar
+GET {{host}}/api/products?search=mouse&categoryId=1
+
+### Obtener uno
+GET {{host}}/api/products/1
+
+### Crear
+POST {{host}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Monitor de práctica",
+  "price": 990000,
+  "stock": 3,
+  "categoryId": 1
+}
+
+### Actualizar
+PUT {{host}}/api/products/1
+Content-Type: application/json
+
+{
+  "name": "Teclado mecánico Pro",
+  "price": 310000,
+  "stock": 10,
+  "active": true,
+  "categoryId": 1
+}
+
+### Reporte
+GET {{host}}/api/products/reports/inventory

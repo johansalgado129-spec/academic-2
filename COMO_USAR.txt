@@ -1,0 +1,21 @@
+.NET + C# TECHNICAL ACADEMY
+============================
+
+1) Para estudiar de inmediato en Windows:
+   doble clic en INICIAR_PLATAFORMA.bat
+
+2) Alternativa:
+   abre la carpeta web y luego index.html
+
+3) Para practicar la API real:
+   instala .NET 10 SDK, abre una terminal en src/TechTest.Api y ejecuta:
+
+   dotnet restore
+   dotnet run
+
+4) Para SQL:
+   revisa database/schema.sql y database/queries-practice.sql.
+   No abras answers.sql hasta intentar los ejercicios.
+
+5) Para subir a GitHub:
+   revisa docs/GITHUB_SETUP.md.
